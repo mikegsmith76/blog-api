@@ -37,13 +37,13 @@ if (file_exists($root_dir . '/.env')) {
  * Set up our global environment constant and load its config first
  * Default: production
  */
-define('WP_ENV', dockerenv('WP_ENV') ?: 'production');
+define('WP_ENV', env('WP_ENV') ?: 'production');
 
 /**
  * URLs
  */
-Config::define('WP_HOME', dockerenv('WP_HOME'));
-Config::define('WP_SITEURL', dockerenv('WP_SITEURL'));
+Config::define('WP_HOME', env('WP_HOME'));
+Config::define('WP_SITEURL', env('WP_SITEURL'));
 
 /**
  * Custom Content Directory
@@ -55,17 +55,17 @@ Config::define('WP_CONTENT_URL', Config::get('WP_HOME') . Config::get('CONTENT_D
 /**
  * DB settings
  */
-Config::define('DB_NAME', dockerenv('DB_NAME'));
-Config::define('DB_USER', dockerenv('DB_USER'));
-Config::define('DB_PASSWORD', dockerenv('DB_PASSWORD'));
-Config::define('DB_HOST', dockerenv('DB_HOST') ?: 'localhost');
+Config::define('DB_NAME', env('DB_NAME'));
+Config::define('DB_USER', env('DB_USER'));
+Config::define('DB_PASSWORD', env('DB_PASSWORD'));
+Config::define('DB_HOST', env('DB_HOST') ?: 'localhost');
 Config::define('DB_CHARSET', 'utf8mb4');
 Config::define('DB_COLLATE', '');
+
 $table_prefix = env('DB_PREFIX') ?: 'wp_';
 
 if (env('DATABASE_URL')) {
     $dsn = (object) parse_url(env('DATABASE_URL'));
-
     Config::define('DB_NAME', substr($dsn->path, 1));
     Config::define('DB_USER', $dsn->user);
     Config::define('DB_PASSWORD', isset($dsn->pass) ? $dsn->pass : null);
@@ -75,14 +75,14 @@ if (env('DATABASE_URL')) {
 /**
  * Authentication Unique Keys and Salts
  */
-Config::define('AUTH_KEY', dockerenv('AUTH_KEY'));
-Config::define('SECURE_AUTH_KEY', dockerenv('SECURE_AUTH_KEY'));
-Config::define('LOGGED_IN_KEY', dockerenv('LOGGED_IN_KEY'));
-Config::define('NONCE_KEY', dockerenv('NONCE_KEY'));
-Config::define('AUTH_SALT', dockerenv('AUTH_SALT'));
-Config::define('SECURE_AUTH_SALT', dockerenv('SECURE_AUTH_SALT'));
-Config::define('LOGGED_IN_SALT', dockerenv('LOGGED_IN_SALT'));
-Config::define('NONCE_SALT', dockerenv('NONCE_SALT'));
+Config::define('AUTH_KEY', env('AUTH_KEY'));
+Config::define('SECURE_AUTH_KEY', env('SECURE_AUTH_KEY'));
+Config::define('LOGGED_IN_KEY', env('LOGGED_IN_KEY'));
+Config::define('NONCE_KEY', env('NONCE_KEY'));
+Config::define('AUTH_SALT', env('AUTH_SALT'));
+Config::define('SECURE_AUTH_SALT', env('SECURE_AUTH_SALT'));
+Config::define('LOGGED_IN_SALT', env('LOGGED_IN_SALT'));
+Config::define('NONCE_SALT', env('NONCE_SALT'));
 
 /**
  * Custom Settings
@@ -122,21 +122,4 @@ Config::apply();
  */
 if (!defined('ABSPATH')) {
     define('ABSPATH', $webroot_dir . '/wp/');
-}
-
-/**
- * Check for an environment variable that might be stored in a secret
- *
- * @param $str_k$keyey
- * @return mixed
- */
-function dockerenv($key)
-{
-    $secretKey = $key . '_FILE';
-
-    if (false !== getenv($secretKey)) {
-        return Env::convert(trim(file_get_contents(getenv($secretKey))));
-    }
-
-    return Env::get($key);
 }
