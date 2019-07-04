@@ -34,12 +34,16 @@
   ],
   "require": {
     "php": ">=7.1",
+    "ext-bcmath": "*",
+    "ext-exif": "*",
+    "ext-gd": "*",
     "composer/installers": "^1.4",
     "vlucas/phpdotenv": "^3.0.0",
     "oscarotero/env": "^1.1.0",
     "roots/wordpress": "5.2.*",
     "roots/wp-config": "1.0.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-theme/integer":"1.2.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2",
