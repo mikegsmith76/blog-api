@@ -1,0 +1,257 @@
+# Copyright (C) 2018 Integer
+# This file is distributed under the same license as the Integer package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Integer\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: comments.php:28
+msgid "One Reply"
+msgstr ""
+
+#. translators: %s: number of replies.
+#: comments.php:32
+msgctxt "comments title"
+msgid "%1$s Reply"
+msgid_plural "%1$s Replies"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:59
+msgid "Comments are closed."
+msgstr ""
+
+#. translators: %s: comment author name.
+#: comments.php:66
+msgid "Reply to %s"
+msgstr ""
+
+#: comments.php:67
+msgid "Cancel"
+msgstr ""
+
+#: functions.php:63
+msgid "Primary"
+msgstr ""
+
+#: functions.php:64
+msgid "Footer"
+msgstr ""
+
+#: functions.php:114
+msgid "Footer #1"
+msgstr ""
+
+#: functions.php:123
+msgid "Footer #2"
+msgstr ""
+
+#: functions.php:132
+msgid "Before Post Content"
+msgstr ""
+
+#: functions.php:141
+msgid "After Post Content"
+msgstr ""
+
+#: functions.php:168
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:226, header.php:34, header.php:50
+msgid "Menu"
+msgstr ""
+
+#: functions.php:227
+msgid "Close"
+msgstr ""
+
+#: functions.php:228
+msgid "Expand child menu"
+msgstr ""
+
+#: functions.php:229
+msgid "Collapse child menu"
+msgstr ""
+
+#: header.php:21
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:66
+msgid "No menu assigned."
+msgstr ""
+
+#: header.php:67
+msgid "Add now."
+msgstr ""
+
+#. translators: %s: search term.
+#: search.php:20
+msgid "Search Results for: %s"
+msgstr ""
+
+#: inc/customizer.php:25
+msgid "Use rounded corners"
+msgstr ""
+
+#: inc/customizer.php:38
+msgid "Use Gravatar as Logo"
+msgstr ""
+
+#. translators: placeholder shows the site admin email.
+#: inc/customizer.php:41
+msgid "Use your gravatar associated with <strong>%s</strong> as a site logo image. This will override the logo set manually."
+msgstr ""
+
+#: inc/customizer.php:41
+msgid "https://en.gravatar.com/support/what-is-gravatar/"
+msgstr ""
+
+#: inc/customizer.php:41
+msgid "What is Gravatar?"
+msgstr ""
+
+#: inc/customizer.php:66
+msgid "Extra Features"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Like Integer? Then check out the Pro version! It has some extra features to help you level-up your blog."
+msgstr ""
+
+#: inc/customizer.php:76
+msgid "1. Custom Colors"
+msgstr ""
+
+#: inc/customizer.php:79
+msgid "Pro version allows you to set your own colors for text, headings, links, and background."
+msgstr ""
+
+#: inc/customizer.php:89
+msgid "2. Two-column Layout"
+msgstr ""
+
+#: inc/customizer.php:92
+msgid "With the pro version, you can set the blog layout to display posts in a two-column grid."
+msgstr ""
+
+#: inc/customizer.php:102
+msgid "3. Custom Footer Message"
+msgstr ""
+
+#: inc/customizer.php:105
+msgid "With Integer Pro, you can set your own footer message."
+msgstr ""
+
+#: inc/customizer.php:107
+msgid "Learn More"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: inc/extras.php:83
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: inc/extras.php:120
+msgctxt "Do not translate \"Integer\". It's a theme name."
+msgid "Integer Thumbnail"
+msgstr ""
+
+#: inc/extras.php:121
+msgctxt "Do not translate \"Integer\". It's a theme name."
+msgid "Integer Thumbnail 2x"
+msgstr ""
+
+#: inc/extras.php:155
+msgid "Please define default parameters in the form of an array."
+msgstr ""
+
+#: inc/extras.php:160
+msgid "Please define an SVG icon filename."
+msgstr ""
+
+#: inc/jetpack.php:47
+msgid "Load More"
+msgstr ""
+
+#: inc/template-tags.php:171
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:172
+msgid "One Comment"
+msgstr ""
+
+#: inc/template-tags.php:173
+msgid "% Comments"
+msgstr ""
+
+#. translators: %s: author name.
+#: inc/template-tags.php:225
+msgid "Published by %s"
+msgstr ""
+
+#: inc/template-tags.php:235
+msgid "Visit website"
+msgstr ""
+
+#: inc/template-tags.php:355
+msgid "Older Post"
+msgstr ""
+
+#: inc/template-tags.php:356
+msgid "Newer Post"
+msgstr ""
+
+#: inc/template-tags.php:379, inc/template-tags.php:422
+msgid "Prev"
+msgstr ""
+
+#: inc/template-tags.php:380, inc/template-tags.php:423
+msgid "Next"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: inc/template-tags.php:466
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#. translators: 1: name of the theme, 2: Name of the theme shop.
+#: inc/template-tags.php:479
+msgid "%1$s theme by %2$s"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:24
+msgid "Nothing matched your search terms. Try again with different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:32
+msgid "Looks like the page you are looking for has been moved or does not exist. Click on the site logo to go to the homepage or try searching."
+msgstr ""
+
+#: template-parts/content-none.php:40
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:27, template-parts/content-single.php:31, template-parts/content.php:32
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s is the title of the post.
+#: template-parts/content.php:26
+msgid "Continue reading %s"
+msgstr ""
